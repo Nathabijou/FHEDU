@@ -1,0 +1,2205 @@
+/* =======================================================================
+Template Name: Youtubers
+Author:  SmartEye Technologies
+Author URI: www.smarteyeapps.com
+Version: 1.0
+coder name:Prabin Raja
+Description: This Template is created for Youtubers
+======================================================================= */
+
+/* ===================================== Import Variables ================================== */
+
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;600;800&display=swap");
+.bg-primary {
+  background-color: #438e3d !important;
+}
+
+.text-primary {
+  color: #f51841;
+}
+
+/* ===================================== Basic CSS ==================================== */
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.cp {
+  cursor: pointer;
+}
+
+
+
+#menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center; 
+}
+
+#menu ul li {
+  display: inline-block; 
+  margin: 0;
+  padding: 50px; 
+}
+
+#menu ul li a {
+  display: inline-block; 
+  padding: 10px 20px; 
+  text-decoration: none; 
+  color: #444;
+  border-bottom: 2px solid transparent; 
+  transition: border-bottom 0.3s ease, color 0.3s ease; 
+  padding: 100px; 
+  margin: 20px; 
+}
+
+
+#menu ul li a:hover {
+  border-bottom: 4px solid rgba(242, 44, 26, 0.866); 
+  color: rgb(24, 7, 76); 
+  
+}
+
+@media (max-width: 991px) { 
+  #menu ul {
+    text-align: center; 
+  }
+  
+  #menu ul li {
+    display: block; 
+    margin-bottom: 10px; 
+  }
+
+  #menu ul li a {
+    padding: 1px; 
+  }
+}
+
+
+
+
+@media (max-width: 992px) {
+  
+  .navbar-toggler {
+      border-color: green; 
+      background-color: rgb(255, 149, 0); 
+  }
+  .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='green' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Lignes vertes */
+  }
+  
+  .navbar-toggler:hover,
+  .navbar-toggler:focus {
+      background-color: green; 
+      border-color: green; 
+  }
+}
+
+@media (min-width: 220px) and (max-width: 767px) {
+  .top-info {
+      font-size: 10px; 
+      padding: 10px; 
+  }
+
+ 
+  .top-info i {
+      font-size: 1.2em; 
+  }
+
+  .top-info nav {
+      display: none;
+  }
+}
+
+
+
+
+
+
+/* Ajuster la taille du logo */
+.logo-navbar {
+  max-height: 200%;
+  max-width: 200%; 
+  width: auto;
+  margin-left: auto; 
+}
+
+/* Centrer la liste des éléments de navigation */
+.navbar-nav {
+  flex-direction: row;
+  justify-content: center; 
+  
+}
+
+/* Réduire l'espace occupé par la navbar */
+
+
+/* Ajuster la hauteur de la navbar */
+.navbar {
+  padding: -5.5rem 0; 
+}
+
+/* Réduire les marges et padding des liens de navigation */
+.nav-link {
+  padding: 0.5rem 1rem; 
+}
+
+/* Styles pour les écrans entre 768px et 1202px */
+@media (min-width: 220px) and (max-width: 1202px) {
+
+  /* Ajuster la taille et la position du logo */
+  .logo-navbar {
+      width: 100px; 
+      height: auto; 
+      padding-left: 20px; 
+      margin-left: 20px; 
+  }
+
+  /* Ajuster la navbar pour ces dimensions */
+  .navbar {
+      padding: 0 0; 
+  }
+
+  /* Centrer les éléments de navigation */
+  .navbar-nav {
+      justify-content: center; /* Centrer les liens de navigation */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Section Membership Styling */
+.membership-section {
+  background-color: #e9f7f6; /* Background color for the section */
+  padding: 50px 0; /* Padding top and bottom */
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  max-width: 1200px; /* Max width of the container */
+  margin: 0 auto; /* Center the container */
+  padding: 0 15px; /* Padding on left and right */
+  font-family: 'Aptos', sans-serif;
+}
+
+.section-title {
+  text-align: center; /* Center-align the text */
+  margin-bottom: 30px; /* Space below the title */
+  font-family: 'Aptos', sans-serif;
+}
+
+.section-title h2 {
+  font-size: 2.5rem; /* Font size for the section title */
+  color: #333; /* Dark color for the title */
+  margin-bottom: 10px; /* Space below the title */
+  font-family: 'Aptos', sans-serif;
+}
+
+.section-title p {
+  font-size: 1.1rem; /* Font size for the paragraph */
+  color: #555; /* Slightly lighter color for the text */
+  line-height: 1.6; /* Line height for readability */
+  font-family: 'Aptos', sans-serif;
+}
+
+.membership-card {
+  background-color: #ffffff; /* Background color for the card */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding inside the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth effect */
+  margin-bottom: 20px; /* Space below each card */
+  text-align: center; /* Center-align the text */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+}
+
+.membership-card:hover {
+  transform: scale(1.05); /* Slightly scale up on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.card-icon {
+  font-size: 2rem; /* Font size for icons */
+  color: #007bff; /* Color for icons */
+  margin-bottom: 15px; /* Space below the icon */
+}
+
+.membership-card h4 {
+  font-size: 1.25rem; /* Font size for card headings */
+  color: #333; /* Color for card headings */
+  margin-bottom: 10px; /* Space below the heading */
+}
+
+.membership-card p {
+  font-size: 1rem; /* Font size for card paragraphs */
+  color: #666; /* Color for card paragraphs */
+  line-height: 1.6; /* Line height for readability */
+}
+
+
+
+
+/* a propos */
+
+/* Style pour la section principale */
+.section {
+  background-color: #bceac5; /* Couleur de fond bleue */
+  color: #ffffff; /* Couleur du texte en blanc */
+  padding: 40px; /* Espacement interne */
+  border-radius: 8px; /* Coins arrondis pour la section */
+  max-width: 800px; /* Largeur maximale pour centrage */
+  margin: 0 auto; /* Centrer la section horizontalement */
+  text-align: center; /* Centre le texte */
+}
+
+/* Style pour le titre de la section */
+.section h2 {
+  font-size: 2rem; /* Taille de la police du titre */
+  margin-bottom: 20px; /* Espace sous le titre */
+  font-weight: bold; /* Met le titre en gras */
+}
+
+/* Style pour les blocs d'articles */
+.blog-post {
+  background-color: #ffffff; /* Fond blanc pour les blocs */
+  color: #333333; /* Couleur du texte en gris foncé */
+  border: 1px solid #ddd; /* Bordure gris clair */
+  border-radius: 8px; /* Coins arrondis pour les blocs */
+  padding: 20px; /* Espacement interne */
+  margin-bottom: 20px; /* Espace en bas entre les blocs */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère pour les blocs */
+  transition: box-shadow 0.3s; /* Transition douce pour les effets de survol */
+}
+
+/* Effet de survol pour les blocs */
+.blog-post:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Ombre plus marquée au survol */
+}
+
+.blog-post p {
+  font-size: 1rem; /* Taille de la police pour les paragraphes */
+  line-height: 1.6; /* Hauteur de ligne pour une meilleure lisibilité */
+}
+
+
+
+
+/* a propos de herline diversaint */
+/* A propos de Herline Duversaint */
+/* Styles pour la section Fondatrice */
+.custom-founder-section-title {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 40px;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 5px;
+  border-bottom: 3px solid #ff9500; /* Ligne sous le titre */
+  background-color: #ffffff; /* Couleur de fond pour le titre */
+}
+
+/* Styles pour le bloc de la directrice et fondatrice */
+.custom-founder-profile {
+  background-color: #ffffff; /* Couleur de fond blanche */
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2 6px rgba(0, 0, 0, 0.1); /* Ajout d'une légère ombre pour le profil */
+  margin-bottom: 50px; /* Ajout d'un espace en bas de la section */
+}
+
+/* Par défaut, image et texte côte à côte */
+.custom-founder-description {
+  margin-right: 20px;
+  box-shadow: 0 px 8px rgba(35, 35, 35, 0.1);
+}
+
+.custom-founder-description h5 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Description Herline */
+.custom-founder-description p {
+  font-size: 1rem;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.custom-founder-img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease; /* Transition pour l'effet de zoom */
+}
+
+.custom-founder-img:hover {
+  transform: scale(1.1); /* Agrandissement de l'image au survol */
+}
+
+.custom-fw-bolds {
+  color: #05220a;
+  background-color: #edeaea;
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px;
+  font-weight: bold; /* Rend le texte en gras */
+}
+
+/* Media query pour les petits écrans (comme les téléphones) */
+@media (max-width: 767px) {
+  /* Change l'ordre pour les écrans de moins de 767px de largeur */
+  .custom-founder-profile {
+    flex-direction: column; /* Passe en mode colonne pour empiler l'image et le texte */
+    margin-bottom: 60px; /* Augmentation de l'espace en bas sur mobile */
+  }
+
+  .custom-founder-description {
+    margin-right: 0; /* Retire l'espace de marge sur mobile */
+    margin-top: 20px; /* Ajoute de l'espace au-dessus du texte pour séparer de l'image */
+    text-align: center; /* Centre le texte */
+  }
+
+  .custom-founder-img {
+    width: 100%; /* L'image occupe toute la largeur de l'écran */
+    max-width: 300px; /* Limite la taille maximale de l'image */
+    margin-bottom: 20px; /* Ajoute de l'espace sous l'image */
+  }
+}
+
+
+
+
+/* ?cause resente */
+
+/* Image petite et ronde */
+.caus-img img {
+  border-radius: 50%; /* Rond */
+  width: 150px; /* Taille plus petite */
+  height: 150px; /* Taille plus petite */
+  display: block;
+  margin: 0 auto; /* Centrer l'image */
+  object-fit: cover; /* Ajuster l'image pour qu'elle remplisse le cercle */
+}
+
+/* Suppression du style qui empêche l'image d'être ronde */
+.caus-img img {
+  width: 150px !important; /* Taille forcée */
+  height: 150px !important;
+  border-radius: 50%; /* Arrondi */
+  object-fit: cover; /* Remplir le cercle */
+}
+
+/* Style de la boîte */
+.causen-ccover {
+  background-color: #fdfcfbbc; /* Orange très pâle */
+  border-radius: 10px; /* Coins arrondis */
+  padding: 20px;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Transition pour les animations */
+  box-shadow: 0px 4px 6px rgba(115, 164, 1, 0.442); /* Ombre légère pour un effet de profondeur */
+}
+
+/* Effet de survol */
+.causen-ccover:hover {
+  background-color: #a4e5ab; /* Change le fond en vert au survol */
+  transform: translateY(-10px); /* Légèrement remonter la boîte */
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); /* Ombre plus prononcée au survol */
+}
+
+/* Style du texte dans la boîte */
+.caus-detail h4 {
+  text-align: center;
+  color: #079d16;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+/* Couleur du texte au survol */
+.causen-ccover:hover .caus-detail h4,
+.causen-ccover:hover .caus-info span {
+  color: #ffffff; /* Le texte devient blanc quand la boîte est survolée */
+}
+
+/* Style des informations (RAISED, TARGET) */
+.caus-info {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333; /* Couleur du texte par défaut */
+}
+
+.caus-info span {
+  display: block;
+  text-align: center;
+}
+
+
+
+/* About our FHEDU */
+
+
+/* Style général des boîtes */
+.about-diag {
+  background-color: #ffffff; /* Fond blanc */
+  border-radius: 12px; /* Coins arrondis pour un effet plus doux */
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre douce */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transition pour les effets au survol */
+  text-align: center; /* Centre le texte à l'intérieur de la boîte */
+}
+
+
+/* Style de l'icône */
+.icon {
+  font-size: 24px;
+  color: #066910; /* Couleur verte de la fondation */
+  margin-bottom: 10px;
+}
+
+/* Style du texte */
+.tex h5 {
+  font-size: 36px; /* Taille du titre */
+  color: #066910; /* Couleur verte pour le titre */
+  margin: 0;
+  font-weight: bold;
+}
+
+.tex p {
+  font-size: 16px; /* Taille du texte */
+  color: #333333; /* Couleur du texte */
+  margin: 5px 0 0;
+}
+
+/* Effet de survol */
+.about-diag:hover {
+  background-color: #a4e5ab; /* Couleur verte très pâle pour le survol */
+  transform: translateY(-5px); /* Légère remontée au survol */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Ombre plus prononcée au survol */
+}
+
+/* Style du conteneur des boîtes */
+.diag-ro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Répartit les boîtes de manière égale */
+}
+
+
+.session-title {
+    margin-bottom: 30px; /* Ajustez la valeur en fonction de l'espace souhaité */
+    text-align: center; /* Optionnel : Centre le texte */
+}
+
+.session-title p {
+    font-size: 16px; /* Ajustez la taille de la police si nécessaire */
+    color: #3a2f24; /* Ajustez la couleur du texte si nécessaire */
+}
+
+.session-title h2 {
+    font-size: 24px; /* Ajustez la taille de la police si nécessaire */
+    color: #066910; /* Ajustez la couleur du titre si nécessaire */
+    font-weight: bold; /* Optionnel : Rend le titre plus prononcé */
+}
+
+/* titre a propos  */
+
+/* styles.css */
+.session-title h1 {
+  font-size: 2.5rem; /* Ajuste la taille de la police si nécessaire */
+  font-weight: bold; /* Met en gras le texte */
+  color: #066910; /* Couleur verte */
+  text-align: center; /* Centre le texte */
+  margin-bottom: 30px; /* Espace en bas du titre */
+  border-bottom: 3px solid #066910; /* Ligne sous le titre pour un effet supplémentaire */
+  padding-bottom: 15px; /* Espace entre le texte et la ligne */
+}
+
+
+/* Titre soutien a l'education */
+
+/* styles.css */
+.custom-title {
+  font-size: 1rem; /* Ajuste la taille de la police si nécessaire */
+  font-weight: bold; /* Met en gras le texte */
+  color: #b88a00; /* Couleur verte */
+  margin-bottom: 20px; /* Espace en bas du titre */
+  text-align: center; /* Centre le texte */
+  /* border-bottom: 2px solid #066910; Ligne sous le titre pour un effet supplémentaire */
+  padding-bottom: 10px; /* Espace entre le texte et la ligne */
+}
+
+/* titre  */
+/* styles.css */
+.session-title p {
+  font-size: 1.2rem; /* Taille de la police pour le paragraphe */
+  color: #333; /* Couleur du texte */
+  text-align: center; /* Centre le texte */
+  margin-bottom: 10px; /* Espace sous le paragraphe */
+  font-style: italic; /* Italique pour le texte */
+}
+
+.session-title h2 {
+  font-size: 2rem; /* Ajuste la taille de la police pour le titre */
+  font-weight: bold; /* Met en gras le texte */
+  color: #066910; /* Couleur verte */
+  text-align: center; /* Centre le texte */
+  margin-top: 0; /* Élimine le marge en haut si nécessaire */
+  margin-bottom: 30px; /* Espace en bas du titre */
+  border-bottom: 2px solid #066910; /* Ligne sous le titre pour un effet supplémentaire */
+  padding-bottom: 10px; /* Espace entre le texte et la ligne */
+}
+
+
+
+/* objectif de fhedu */
+
+body {
+  font-family: 'Aptos', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Couleur de fond générale */
+}
+
+/* Styles spécifiques à la section des objectifs */
+.goal-section {
+    background-color: #d4edda; /* Fond vert pâle */
+    color: #155724; /* Texte vert foncé */
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Styles pour le titre */
+.goal-section h1 {
+    font-size: 28px;
+    color: #004d00; /* Couleur verte plus foncée pour le titre */
+    margin-bottom: 20px;
+}
+
+/* Styles pour les paragraphes */
+.goal-section p {
+    font-size: 18px;
+    color: #155724; /* Couleur du texte des paragraphes */
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Styles pour le texte mis en valeur */
+.highlight {
+    font-weight: bold;
+    color: #004d00; /* Couleur verte pour mettre en valeur */
+}
+
+
+/* Style pour l'introduction bienvenue */
+.introduction {
+  background: linear-gradient(to right, #b6e1c365, #d1c89665); 
+  color: #545353;
+  padding: 6px 30px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  border-radius: 8px;
+  margin: 50px auto;
+  max-width: 1200px;
+  box-shadow: 0 9px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style pour le titre h2 de l'introduction */
+.introduction h2 {
+  background: linear-gradient(to right, #ffffff59, #ffffff59);
+  border-radius: 5px;
+  font-size: 2.5rem; /* Taille de police par défaut */
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  color: #07b62d;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0 1px 5px rgba(23, 54, 93, 0.401);
+}
+
+/* Style pour le paragraphe de l'introduction */
+.introduction p {
+  font-size: 1.25rem; /* Taille de police par défaut */
+  line-height: 1.8;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+  max-width: 800px;
+  font-family: 'Aptos', sans-serif;
+  color: #4d4d4d;
+  
+}
+
+/* Ajustements pour les tablettes */
+@media (max-width: 991.98px) {
+  .introduction {
+    padding: 15px 30px;
+    margin: 30px auto;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 900px; /* Réduire la largeur maximale pour les tablettes */
+  }
+
+  .introduction h2 {
+    font-size: 2rem; /* Réduire la taille du titre */
+    margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .introduction p {
+    font-size: 1.1rem; /* Réduire la taille de la police du paragraphe */
+    max-width: 700px;
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+/* Ajustements pour les petits écrans (mobiles) */
+@media (max-width: 575.98px) {
+  .introduction {
+    padding: 10px 20px; /* Réduire les marges et le padding */
+    margin: 20px auto;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 100%; /* Prendre toute la largeur de l'écran */
+  }
+
+  .introduction h2 {
+    font-size: 1.5rem; /* Réduire la taille du titre pour les mobiles */
+  }
+
+  .introduction p {
+    font-size: 1rem; /* Réduire encore la taille du texte */
+    max-width: 100%; /* Prendre toute la largeur */
+  }
+}
+
+
+
+
+
+.serv-cove p {
+  font-family: 'Aptos', sans-serif; /* Appliquer Aptos à tous les paragraphes dans .serv-cove */
+  font-style: normal; /* S'assurer que le texte n'est pas en italique */
+}
+
+
+.triangle-container {
+  position: relative;
+  width: 350px; /* Adjust the container size */
+  height: 350px; /* Adjust the container size */
+}
+
+.photo-container {
+  position: absolute;
+}
+
+.img-1 {
+  top: 0;
+  left: 0;
+  width: 160px;
+  height: 160px;
+  z-index: 2;
+}
+
+.img-2 {
+  top: 30px;
+  left: 120px;
+  width: 200px;
+  height: 200px;
+  z-index: 1;
+}
+
+.img-3 {
+  top: 200px;
+  left: 70px;
+  width: 120px;
+  height: 120px;
+  z-index: 3;
+}
+
+.rounded-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid rgb(31, 156, 3); /* Optional: Add a border for aesthetics */
+}
+
+.rounded-image:hover {
+  transform: scale(1.2); /* Agrandit l'image à 120% au survol */
+}
+
+
+.fw-bolders {
+  color: #f46d1e !important; /* Force la couleur orange */
+  /* background-color: #ffffff !important;  */
+  font-weight: bold !important;
+  
+}
+
+
+
+
+
+
+
+
+
+/* Blog */
+
+/* Styles généraux pour le blog */
+#blog {
+  background-color: #135ca5; /* Couleur de fond légère */
+}
+
+.serv-cove {
+  position: relative;
+  overflow: hidden; /* Pour masquer les débordements */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.serv-cove img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.serv-cove:hover img {
+  transform: scale(1.1); /* Agrandir l'image au survol */
+}
+
+.serv-cove .p-2 {
+  padding: 15px;
+}
+
+.serv-cove:hover .info-overlay {
+  opacity: 1; /* Afficher l'overlay au survol */
+}
+
+.info-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(133, 163, 84, 0.7); /* Fond noir semi-transparent pour meilleur contraste */
+  color: #fff; /* Couleur du texte en blanc */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center;
+  padding: 20px; /* Ajouter un peu de padding pour que le texte ne touche pas les bords */
+  box-sizing: border-box; /* Inclure le padding dans les dimensions de l'élément */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.info-overlay h5 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.info-overlay p {
+  font-size: 1.25rem;
+  margin: 0;
+}
+/* footer style */
+
+.no-underline {
+  text-decoration: none; /* Enlève le soulignement */
+  color: white; /* Couleur du texte en blanc */
+}
+
+.white-text {
+  color: white; /* Assure que le texte est blanc */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* titre dans footer */
+
+.no-underline:hover {
+  color: rgb(254, 187, 4); /* Couleur du texte en vert au survol */
+}
+
+
+
+
+/* Styles pour la section "Que faisons-nous ?" */
+.what-we-do {
+  font-family: 'Aptos', sans-serif; 
+  color: #07b62d;
+}
+
+.what-we-do h2 {
+  font-family: 'Aptos', sans-serif; /* Appliquer Aptos au titre */
+  font-size: 2.5rem; /* Ajustez la taille selon vos préférences */
+  color: #07b62d; /* Couleur du titre */
+}
+
+.what-we-do p {
+  font-family: 'Aptos', sans-serif; /* Appliquer Aptos aux paragraphes */
+  font-size: 1rem; /* Ajustez la taille du texte selon vos préférences */
+  color: #3a3a3a; /* Couleur du texte */
+  
+}
+
+/* Ajustements pour les titres des colonnes */
+.what-we-do h4 {
+  font-family: 'Aptos', sans-serif; /* Appliquer Aptos aux titres des colonnes */
+  font-size: 1.25rem; /* Ajustez la taille selon vos préférences */
+  background-color: #f6fffe00;
+}
+
+
+
+
+
+
+/* Compteur pour l'evenement  */
+/* Styles pour le compte à rebours */
+.countdown {
+    font-family: Arial, sans-serif;
+    color: #4c4f4b;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.countdown span {
+    font-size: 2rem;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/* Styles pour le bouton de lancement */
+.launch-button {
+    display: none; /* Cacher le bouton par défaut */
+    text-align: center;
+    margin-top: 20px;
+}
+
+.launch-button a {
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.launch-button a:hover {
+    background-color: #538dca;
+}
+
+/* style pour competeur */
+
+/* Style pour la section du compte à rebours */
+.countdown {
+  background: linear-gradient(to right, #f9f9f7, #f9f9f7, #f9f9f7); /* Dégradé de couleurs */
+  color: #228f04; /* Texte blanc */
+  padding: 2px; /* Espacement interne */
+  border-radius: 9px; /* Coins arrondis */
+  text-align: center; /* Centrer le texte */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Ombre légère */
+  max-width: 650px; /* Largeur maximale */
+  margin: 50px auto; /* Centrer la section */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style pour le titre */
+.countdown h2 {
+  font-size: 20px; /* Taille de police pour le titre */
+  margin-bottom: 10px; /* Espacement sous le titre */
+  font-weight: bold; /* Texte en gras */
+  text-transform: uppercase; /* Majuscules pour le titre */
+  background-color: #efa12a;
+  color: #ffffff;
+  border-radius: 3px;
+  padding: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style pour les chiffres du compte à rebours */
+.countdown span {
+  font-size: 15px; /* Taille de police plus grande pour les chiffres */
+  font-weight: bold; /* Texte en gras */
+  margin: 0 10px; /* Espacement entre les éléments */
+  /* display: inline-block; */
+  padding: 8px 15px; /* Espacement autour des chiffres */
+  background-color: rgba(235, 233, 231, 0.69); /* Fond légèrement transparent */
+  border-radius: 5px; /* Coins arrondis */
+  box-shadow: 0 4px 15px rgba(28, 32, 46, 0.3); /* Ombre légère */
+}
+
+/* Changer la couleur lors du survol des chiffres */
+.countdown span:hover {
+  background-color: rgba(114, 224, 99, 0.274); /* Fond un peu plus clair au survol */
+}
+
+/* Ajuster le style pour les petits écrans */
+@media (max-width: 600px) {
+  .countdown h2 {
+      font-size: 0.5rem; /* Réduire la taille du titre sur les petits écrans */
+  }
+
+  .countdown span {
+      font-size: 1.5rem; /* Réduire la taille des chiffres sur les petits écrans */
+      margin: 0 5px;
+  }
+}
+
+
+
+
+/* Nos evenements */
+/* Style pour le survol des éléments du menu déroulant */
+.dropdown-menu .dropdown-item:hover {
+  background-color: #338446; /* Vert léger */
+  position: relative;
+  color: #ffffff;
+}
+
+/* Ajouter une barre jaune sous l'élément au survol */
+.dropdown-menu .dropdown-item:hover::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #ffc107; /* Jaune */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
+
+
+/* recent activity */
+/* Style global pour la page */
+body {
+  font-family: 'Aptos Display', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f9;
+}
+
+/* Style pour la section Activité Récente */
+.activity-section {
+  background-color: #e0f7fa; /* Couleur de fond légère */
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.activity-section .section-title {
+  font-size: 24px;
+  color: #00796b; /* Couleur du titre */
+  margin: 0;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+/* Ligne de soulignement sous les titres */
+.activity-section .section-title::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #ffd54f; /* Couleur de la ligne de soulignement */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* Style de la liste d'activité récente */
+.activity-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.activity-list li {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+/* Style pour le tableau du programme */
+.card-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 0px;
+  width: 100%;
+  max-width: 65%;
+  position: relative;
+}
+
+/* Style des titres dans les cartes */
+.card .section-title {
+  font-size: 30px;
+  color: #4CAF50;
+  margin: 0;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+/* Ligne de soulignement sous les titres */
+.card .section-title::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #FFD700; /* Couleur de la ligne de soulignement */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 3px;
+}
+
+/* Style pour le tableau du programme */
+.program-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  box-shadow: 0 2px 15px rgba(28, 32, 46, 0.3); 
+  border-radius: 10px;
+}
+
+/* Style des en-têtes du tableau */
+.program-table thead th {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Style des cellules du tableau */
+.program-table tbody td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+/* Alternance de couleur pour les lignes */
+.program-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Style au survol des lignes */
+.program-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Icônes */
+.program-table td i, .activity-list i {
+  color: #4CAF50;
+  margin-right: 8px;
+}
+
+/* Styles pour les petits écrans (responsive) */
+@media screen and (max-width: 768px) {
+  .program-table {
+      font-size: 14px;
+      width: 100%;
+  }
+
+  .section-title {
+      font-size: 20px;
+  }
+}
+
+
+/* 
+l'equipe management */
+
+@font-face {
+  font-family: Arial, Helvetica, sans-serif;
+  src: url('fonts/aptos.woff2') format('woff2'),
+       url('fonts/aptos.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.section-title h2 {
+  font-family: 'Aptos', sans-serif;
+  font-size: 36px;
+  color: #080808;
+  /* text-decoration: underline; */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.section-title p {
+  
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  color: #191b19;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+/* 
+contact  */
+
+
+
+.contact-section {
+  background-color: #f4f4f4;
+  padding: 40px 20px;
+}
+
+.contact-header {
+  background-color: #83e7ad; /* Couleur de fond pour le titre */
+  color: #fff; /* Couleur du texte */
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-header h2 {
+  font-size: 2em;
+  margin: 0;
+  color: inherit; /* Assurez-vous que la couleur du texte est héritée du parent */
+  text-decoration: none; /* Assurez-vous qu'aucun soulignement n'est appliqué */
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 6px 8px rgba(0,0,0,0.1);
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: background-color 0.3s, transform 0.3s;
+  text-align: left;
+}
+
+.contact-card:hover {
+  background-color: #efa819;
+  transform: scale(1.02);
+}
+
+.contact-card i {
+  font-size: 24px;
+  color: #135629;
+}
+
+.contact-details p {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.contact-details a {
+  color: #5f7994;
+  text-decoration: none; /* Enlève le soulignement des liens */
+}
+
+.contact-details a:hover {
+  color: #a2f3cf;
+  text-decoration: underline; /* Soulignement au survol pour indiquer le lien */
+}
+
+/* Enlève le soulignement bleu des liens dans certains cas */
+.contact-details a:focus,
+.contact-details a:active {
+  outline: none;
+  text-decoration: none; /* Assurez-vous qu'aucun soulignement n'est appliqué */
+}
+
+
+
+
+
+
+
+/* titre bienvenue */
+
+
+
+/* Styles de base pour la navbar */
+.navbar {
+  background-color: #f9f9f6; /* Couleur de fond de la navbar */
+}
+
+.navbar-nav .nav-link {
+  color: #066910 !important; /* Couleur du texte */
+  padding: 0.75rem 1.5rem; /* Espacement autour du texte */
+  font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffc107 !important; /* Couleur au survol */
+}
+
+/* Logo de la navbar */
+.navbar-brand img {
+  width: 120px;
+}
+
+/* Style pour le top-info */
+.top-info {
+  background-color: #476438;
+  color: white;
+  padding: 3px;
+  text-align: center;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-info a {
+  color: #ffc107;
+  padding: 20px 0; /* Corrigé le padding pour les liens */
+}
+
+.top-info i {
+  margin-right: 3px;
+}
+
+/* Styles spécifiques pour les petits écrans */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+      background-color: #f6f9f6; /* Couleur de fond du menu déroulant */
+      position: absolute;
+      top: 56px; /* Ajustez en fonction de la hauteur de la navbar */
+      left: 0;
+      width: 100%;
+      z-index: 999; /* Assurez-vous que le menu est au-dessus des autres éléments */
+  }
+  
+  .navbar-nav {
+      flex-direction: column; /* Aligne les éléments de menu en colonne */
+      width: 100%;
+      padding: 0;
+      margin: 0;
+  }
+  
+  .navbar-nav .nav-item {
+      margin: 0;
+  }
+  
+  .navbar-nav .nav-link {
+      padding: 15px 20px; /* Ajuste le padding pour une meilleure lisibilité */
+      text-align: center;
+  }
+  
+  .navbar-nav .nav-link:hover {
+      color: #ffc107 !important; /* Couleur au survol */
+      border-bottom: none; /* Retirer le soulignement au survol sur mobile */
+  }
+}
+
+/* Bouton Donate */
+
+/* Style du bouton par défaut */
+.btn-primary {
+  background-color: #1c7230; /* Couleur de fond verte */
+  border-color: #28a745; /* Couleur de la bordure verte */
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* Transition douce pour les changements */
+}
+
+/* Style du bouton au survol */
+.btn-primary:hover {
+  background-color: #ff7f00; /* Couleur de fond orange */
+  border-color: #ff7f00; /* Couleur de la bordure orange */
+}
+/* Style du bouton par défaut avec la classe spécifique */
+.btn-donate {
+  background-color: #28a745; /* Couleur de fond verte */
+  border-color: #28a745; /* Couleur de la bordure verte */
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* Transition douce pour les changements */
+}
+
+/* Style du bouton au survol avec la classe spécifique */
+.btn-donate:hover {
+  background-color: #ff7f00; /* Couleur de fond orange */
+  border-color: #ff7f00; /* Couleur de la bordure orange */
+}
+
+
+
+
+/* couleur icone reseau */
+
+/* Style pour la liste des icônes sociales */
+.reseau {
+  display: flex;
+  justify-content: center; /* Centre la liste horizontalement */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-links li {
+  margin: 0 10px; /* Espacement entre les icônes */
+}
+
+.social-links a {
+  display: inline-block;
+  padding: 10px; /* Ajoute un espacement autour des icônes */
+  background-color: #ffffff; /* Arrière-plan blanc */
+  border-radius: 50%; /* Forme circulaire */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère pour effet de profondeur */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transition douce pour les interactions */
+  color: #f6f9fa; /* Couleur des icônes */
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.social-links a:hover {
+  background-color: #f0f0f0; /* Couleur de fond au survol */
+  transform: scale(1.1); /* Agrandir légèrement au survol */
+}
+
+.social-links i {
+  font-size: 1.5rem; /* Taille des icônes */
+  color: #fefefe; /* Couleur des icônes par défaut */
+}
+.reseau{
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+.donation-options {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.donation-options h3 {
+  font-size: 2rem;
+  color: #438e3d;
+  margin-bottom: 20px;
+}
+
+.donation-methods {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.method {
+  margin: 1px;
+  padding: 1px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+}
+
+.method img {
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.method p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.btn-outline-primary {
+  border: 2px solid #438e3d;
+  color: #438e3d;
+  background-color: transparent;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: #438e3d;
+  color: #fff;
+}
+
+
+
+
+
+
+@font-face {
+  font-family: "Aptos Display";
+  src: url('fonts/aptos-display.woff2') format('woff2'),
+       url('fonts/aptos-display.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Aptos Display", serif;
+  font-size: 14px; /* Taille de base pour les grands écrans */
+  width: 100%;
+  font-family: "Aptos Display", serif;
+  font-size: 0.9375rem; 
+}
+
+@media (max-width: 767px) {
+  html, body {
+    font-size: 17px; 
+  }
+}
+
+
+
+p {
+  margin-bottom: 0px;
+  width: 100%;
+  letter-spacing: 0.02em; /* Ajuste l'espacement entre les lettres */
+  line-height: 1.5; /* Améliore la lisibilité */
+}
+
+.no-padding {
+  padding: 0px;
+}
+
+.no-margin {
+  margin: 0px;
+}
+
+.hid {
+  display: none;
+}
+
+.top-mar {
+  margin-top: 15px;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.col-lg-3 {
+  padding-top: 0 !important; /* Évite les marges supplémentaires */
+  margin-top: -30px; /* Monte tout le conteneur vers le haut */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+::placeholder {
+  color: #747f8a !important;
+  font-size: 13px;
+  opacity: 0.5 !important;
+}
+
+.container-fluid {
+  padding: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #212020;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body {
+  background-color: #f5f8fc !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  color: #383838;
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.section-title {
+  padding: 30px;
+  margin: 0px;
+  margin-bottom: 20px;
+  /* color: #212020; */
+  font-family: Arial, Helvetica, sans-serif;
+}
+@media screen and (max-width: 767px) {
+  .section-title {
+    padding: 5px;
+  }
+}
+.section-title h2 {
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.section-title p {
+  max-width: 850px;
+  text-align: center;
+  float: none;
+  margin: auto;
+  font-size: 0.9rem;
+  margin-top: 6px;
+  /* color: #212020; */
+  font-family: Arial, Helvetica, sans-serif;
+}
+.section-title span {
+  float: right;
+  font-style: italic;
+}
+
+.inner-title {
+  padding: 20px;
+  padding-left: 0px;
+  margin: 0px;
+  margin-bottom: 10px;
+  padding-bottom: 0px;
+  border-bottom: 1px solid #ccccccc4;
+  display: block;
+  padding-right: 0px;
+}
+.inner-title h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: left;
+  border-bottom: 1px solid #863dd9;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+  width: 300px;
+}
+.inner-title p {
+  width: 100%;
+  text-align: center;
+}
+.inner-title .btn {
+  float: right;
+  margin-top: -38px;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.page-nav {
+  background-size: 100%;
+  padding: 68px;
+  text-align: center;
+  background-color: #eaeaea;
+  /* color: #212020; */
+  font-family: Arial, Helvetica, sans-serif;
+}
+.page-nav ul {
+  float: none;
+  margin: auto;
+}
+@media screen and (max-width: 992px) {
+  .page-nav {
+    background-size: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .page-nav {
+    padding-top: 200px;
+    padding-bottom: 40px;
+  }
+}
+@media screen and (max-width: 356px) {
+  .page-nav {
+    padding-top: 200px;
+    padding-bottom: 40px;
+  }
+}
+.page-nav h2 {
+  font-size: 28px;
+  width: 100%;
+  font-weight: 700;
+  color: #212020;
+  font-family: Arial, Helvetica, sans-serif;
+}
+@media screen and (max-width: 600px) {
+  .page-nav h2 {
+    font-size: 26px;
+  }
+}
+.page-nav ul li {
+  float: left;
+  margin-right: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  font-size: 0.93rem;
+  font-weight: 600;
+  color: #212020;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.page-nav ul li i {
+  width: 30px;
+  text-align: center;
+  color: #212020;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.page-nav ul li a {
+  color: #212020;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.93rem;
+  font-weight: 600;
+}
+
+.btn-success {
+  background-color: #51be78;
+  border-color: #51be78;
+}
+.btn-success:hover {
+  background-color: #51be78 !important;
+  border-color: #51be78 !important;
+}
+.btn-success:active {
+  background-color: #51be78 !important;
+  border-color: #51be78 !important;
+}
+.btn-success:focus {
+  background-color: #51be78 !important;
+  border-color: #51be78 !important;
+  box-shadow: none !important;
+}
+
+
+
+
+/* Bouton donate */
+.btn-primary {
+  background-color: #097803;
+  border-color: #0dff00;
+}
+.btn-primary:hover {
+  background-color: #ff6f00 !important;
+  border-color: #ff6f00 !important;
+}
+.btn-primary:active {
+  background-color: #002df5 !important;
+  border-color: #183ff5 !important;
+}
+.btn-primary:focus {
+  background-color: #183ff5 !important;
+  border-color: #183ff5 !important;
+  box-shadow: none !important;
+}
+
+.btn-outline-primary {
+  border-color: #183ff5;
+  color: #183ff5;
+}
+.btn-outline-primary:hover {
+  background-color: #183ff5 !important;
+  border-color: #183ff5 !important;
+}
+.btn-outline-primary:active {
+  background-color: #183ff5 !important;
+  border-color: #183ff5 !important;
+}
+.btn-outline-primary:focus {
+  background-color: #183ff5 !important;
+  border-color: #183ff5 !important;
+  box-shadow: none !important;
+}
+
+.form-control:focus {
+  box-shadow: none !important;
+  border: 1px solid #CCC;
+}
+
+.btn-light {
+  background-color: #FFF;
+  color: #3F3F3F;
+}
+
+.collapse.show {
+  display: block !important;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border: 1px solid #CCC;
+}
+
+.form-control {
+  background-color: #F8F8F8;
+  margin-bottom: 20px;
+}
+.form-control:focus {
+  background-color: #FFF;
+  border-color: #CCC;
+}
+
+.container {
+  max-width: 1170px;
+}
+@media screen and (max-width: 575px) {
+  .container {
+    padding: 10px 15px;
+  }
+}
+
+/* ===================================== Basic CSS ==================================== */
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+.fw-md {
+  font-weight: 600;
+}
+
+.fw-sm {
+  font-weight: 500;
+}
+
+.big-padding {
+  padding: 50px;
+}
+@media screen and (max-width: 940px) {
+  .big-padding {
+    padding: 30px 10px;
+  }
+}
+
+.bggray {
+  background-color: #F7F5F4 !important;
+}
+
+.fs-11 {
+  font-size: 42px;
+}
+
+.shadow-md {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.07), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.shadow-xs {
+  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.13);
+}
+
+.truncate-2 {
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  height: 42px;
+  overflow: hidden;
+  line-height: 21px;
+}
+
+.truncate-4 {
+  display: -webkit-box !important;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  height: 82px;
+  overflow: hidden;
+  line-height: 21px;
+}
+
+.truncate-6 {
+  display: -webkit-box !important;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  height: 130px;
+  overflow: hidden;
+  line-height: 21px;
+}
+
+.rtable {
+  max-width: 500px;
+  float: none;
+  margin: auto;
+}
+.rtable tr td {
+  padding: 5px;
+}
+
+.fs-7 {
+  font-size: 0.95rem;
+}
+
+.fs-8 {
+  font-size: 0.9rem;
+}
+
+.sticky {
+  position: sticky;
+}
+
+.bg-gray {
+  background: rgba(217, 217, 217, 0.25);
+}
+
+.btn-xs {
+  padding: 2px 8px;
+  font-size: 0.875rem;
+  border-radius: 0.2rem;
+}
+.btn-xs i {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .bordernosm {
+    border: 0px !important;
+  }
+}
+
+.h400 {
+  height: 400px;
+  overflow: auto;
+}
+
+.sticky-top-90 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 85px;
+  z-index: 1020;
+}
+
+.fs-9 {
+  font-size: 0.79rem;
+}
+
+.fs-55 {
+  font-size: 1.1rem;
+}
+
+.mt-25 {
+  margin-top: 11px;
+}
+
+.width-fit {
+  width: fit-content;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.max-250 {
+  max-width: 250px;
+}
+
+/* ===================================== Slider CSS ================================== */
+.slider-detail {
+  padding-top: 125px;
+}
+
+@media screen and (max-width: 767px) {
+  .slider-detail {
+    padding-top: 100px;
+  }
+}
+.slider-detail .carousel-caption {
+  text-align: left;
+  bottom: 110px;
+}
+
+.slider-detail .carousel-caption h5 {
+  font-size: 44px;
+  margin-left: -40px;
+  text-align: center;
+}
+
+.slider-detail .carousel-caption p {
+  margin-left: -40px;
+  font-weight: 600;
+  margin-top: 40px;
+  font-size: 19px;
+  text-align: center;
+}
+
+.slider-detail .vbh {
+  margin-left: -40px;
+  text-align: center;
+}
+
+.slider-detail .vbh .btn {
+  padding: 10px;
+  margin-top: 40px;
+  font-weight: 600;
+  font-size: 18px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.slider-detail .vdg-cur {
+  color: #FFF;
+}
+
+.about-us {
+  padding: 50px;
+  font-family: 'Aptos', sans-serif;
+}
+@media screen and (max-width: 940px) {
+  .about-us {
+    padding: 30px 10px;
+  }
+}
+.about-us .diag-ro {
+  margin: 0px;
+  margin-top: 20px;
+  font-family: 'Aptos', sans-serif;
+}
+.about-us .diag-ro h4 {
+  margin-bottom: 20px;
+  font-family: 'Aptos', sans-serif;
+}
+.about-us .diag-ro .about-diag {
+  display: flex;
+  flex: 1;
+  padding: 10px;
+  margin: auto;
+  font-family: 'Aptos', sans-serif;
+}
+.about-us .diag-ro .about-diag .icon {
+  margin: auto;
+  padding: 15px 20px;
+  font-family: 'Aptos', sans-serif;
+}
+.about-us .diag-ro .about-diag .icon i {
+  font-size: 1.8rem;
+  color: #dedede;
+  font-family: 'Aptos', sans-serif;
+}
+.about-us .diag-ro .about-diag .tex {
+  flex-grow: 1;
+  font-family: 'Aptos', sans-serif;
+}
+.about-us .diag-ro .about-diag .tex h5 {
+  font-weight: 600;
+  color: #129544;
+  font-family: 'Aptos', sans-serif;
+}
+.about-us .diag-ro .about-diag .tex p {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+.about-us .abut-detail h4 {
+  margin-bottom: 20px;
+  font-family: 'Aptos', sans-serif;
+}
+.about-us .abut-detail p {
+  text-indent: 20px;
+  line-height: 28px;
+  margin-bottom: 15px;
+  font-family: 'Aptos', sans-serif;
+}
+
+/* =================== Causes Style Starts Here =================== */
+.causes {
+  padding: 50px;
+}
+@media screen and (max-width: 940px) {
+  .causes {
+    padding: 30px 10px;
+  }
+}
+.causes .cuses-row .causen-ccover {
+  background-color: #FFF;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  padding: 30px 15px;
+  margin-bottom: 20px;
+}
+.causes .cuses-row .caus-img {
+  text-align: center;
+}
+.causes .cuses-row .caus-img img {
+  width: 120px;
+  border-radius: 50%;
+  border: 5px solid #18f57f;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  margin-bottom: 20px;
+}
+.causes .cuses-row .caus-info .left-info {
+  float: left;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+.causes .cuses-row .caus-info .rit-info {
+  float: right;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+.causes .cuses-row .caus-detail {
+  text-align: center;
+  margin-top: 20px;
+}
+.causes .cuses-row .caus-detail h4 {
+  font-size: 1.2rem;
+}
+.causes .cuses-row .donat-btn {
+  margin-top: 20px;
+  text-align: center;
+  text-align: center;
+}
+.causes .cuses-row .donat-btn .btn {
+  width: 60%;
+  background-color: #dbf518;
+  border: #f78d15;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.causes .cuses-row .donat-btn .btn i {
+  margin-right: 10px;
+}
+
+footer .inner {
+  background-color: rgba(31, 85, 22, 0.7);
+  padding: 10px;
+  border-radius: 3px;
+  color: #dedede;
+  font-size: 0.9rem;color: #dedede;
+  font-family: Arial, Helvetica, sans-serif;
+}
+@media screen and (max-width: 940px) {
+  footer .inner {
+    padding: 30px 10px;
+  }
+}
+footer .inner h4 {
+  color: #FFF;
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  
+  font-family: Arial, Helvetica, sans-serif;
+}
+footer .inner .foot-about p {
+  margin-bottom: 30px;
+}
+footer .inner .foot-post .post-row {
+  display: flex;
+  margin-bottom: 10px;
+}
+footer .inner .foot-post .post-row .image img {
+  width: 120px;
+}
+footer .inner .foot-post .post-row .detail {
+  flex-grow: 1;
+  padding-left: 5px;
+}
+footer .inner .foot-post .post-row .detail p {
+  font-size: 0.8rem;
+  margin-top: -5px;
+}
+footer .inner .foot-services ul li {
+  padding: 5px;
+  font-size: 0.95rem;
+}
+footer .inner .foot-services ul li a {
+  color: #ccc;
+}
+footer .inner .foot-news p {
+  margin-bottom: 20px;
+}
+footer .inner .foot-news .input-group {
+  border-radius: 0px;
+}
+footer .inner .foot-news .input-group input {
+  border-radius: 0px;
+}
+footer .inner .foot-news .input-group .input-group-append {
+  border-radius: 0px;
+  background-color: #FFF;
+}
+footer .inner .foot-news ul li {
+  float: left;
+  padding: 10px;
+}
+footer .inner .foot-news ul li i {
+  font-size: 20px;
+}
+
+.copy {
+  padding: 20px;
+  background-color: #3c5730;
+  color: #FFF;
+}
+.copy a {
+  color: #FFF;
+}
+.copy span {
+  float: right;
+}
+.copy span i {
+  margin-right: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
