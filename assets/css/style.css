@@ -1287,6 +1287,112 @@ contact  */
 
 /* titre bienvenue */
 
+/*pin*/
+
+/* Réinitialisation de la marge et du padding, et ajustement de la hauteur */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Aptos Display", serif;
+  font-size: 14px; /* Taille de base pour les grands écrans */
+  width: 100%;
+}
+
+
+/* Si l'écran est petit (mobile, tablette, etc.) */
+@media (max-width: 767px) {
+  html, body {
+    font-size: 17px; /* Augmente la taille de la police sur les petits écrans */
+  }
+}
+
+/* Barre d'information en haut */
+.top-info {
+  background-color: #007BFF; /* Couleur d'arrière-plan de la top-info */
+  padding: 10px 0; /* Ajuste l'espacement interne */
+  z-index: 1031;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* Navbar principale juste en dessous de la top-info */
+.custom-navbar {
+  background-color: #343a40; /* Couleur de fond de la navbar */
+  position: fixed;
+  top: 24px; /* Déplace la navbar juste en dessous de la top-info */
+  left: 0;
+  width: 100%;
+  z-index: 1030; /* La navbar doit être juste sous la top-info */
+  padding: 0.5rem 1rem;
+}
+
+/* Le corps du site commence sous les barres fixes */
+body {
+  margin: 0;
+  padding-top: 100px; /* Ajuste l'espace pour les barres fixes */
+  background-color: #f8f9fa; /* Fond différent pour le corps */
+  position: relative;
+  min-height: 100vh; /* S'assure que le corps occupe tout l'espace vertical */
+}
+
+/* Responsive : Ajustements pour les petits écrans */
+@media (max-width: 768px) {
+  .top-info {
+    background-color: #007BFF; /* Couleur d'arrière-plan de la top-info */
+    padding: 10px 0; /* Ajuste l'espacement interne */
+    z-index: 1031;
+    position: fixed;
+    height: 65px;
+    top: 0px;;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  
+  .custom-navbar {
+    background-color: #343a40; /* Couleur de fond de la navbar */
+    position: fixed;
+    top: calc(10px + 20px + 24px); /* Déplace la navbar juste en dessous de la top-info */
+    left: 0;
+    width: 100%;
+    z-index: 1030; /* La navbar doit être juste sous la top-info */
+    padding: 0.5rem 1rem;
+  }
+
+  body {
+    padding-top: 150px; /* 80px + 56px */
+  }
+
+  .custom-navbar .navbar-toggler {
+    border-color: #fff;
+  }
+}
+
+/* 📱 CORRECTION pour iPad Mini / petits écrans avec hauteur importante */
+@media screen and (max-width: 768px) and (min-height: 1024px) {
+  body {
+    padding-top: 125px; /* ajusté avec 70px de top-info + 55px de navbar */
+  }
+
+  .top-info {
+    height: 70px;
+  }
+
+  .custom-navbar {
+    top: 70px;
+  }
+}
 
 
 /* Styles de base pour la navbar */
@@ -1500,24 +1606,6 @@ contact  */
   font-weight: normal;
   font-style: normal;
 }
-
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: "Aptos Display", serif;
-  font-size: 14px; /* Taille de base pour les grands écrans */
-  width: 100%;
-  font-family: "Aptos Display", serif;
-  font-size: 0.9375rem; 
-}
-
-@media (max-width: 767px) {
-  html, body {
-    font-size: 17px; 
-  }
-}
-
 
 
 p {
