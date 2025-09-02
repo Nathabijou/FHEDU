@@ -72,45 +72,46 @@
 
 
     <nav class="navbar navbar-expand-lg navbar-dark shadow custom-navbar">
-        <div class="container d-flex justify-content-between">
-            <!-- Logo à gauche -->
-            <a class="navbar-brand" href="index.html">
-                <img src="assets/images/assetp.png" alt="Logo FHEDU" class="logo-navbar">
-            </a>
-    
-            <!-- Bouton de menu pour les petits écrans -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-    
-            <!-- Menu de navigation centré avec les éléments espacés -->
-             <!-- Menu de navigation centré avec les éléments espacés -->
-             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">À Propos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="causes.html">Nos Causes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="gallery.html">Galerie</a></li>
-                    
-                    <!-- Dropdown for Blog -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="blog.html" id="blogDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Blogueur
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="blogDropdown">
-                            <li><a class="dropdown-item" href="blog.html">Blogueur</a></li>
-                            <li><a class="dropdown-item" href="evenement.html">Nos Événement </a></li>
-                            <!-- <li><a class="dropdown-item" href="evenement.html">Nos programmes </a></li> -->
-                            <li><a class="dropdown-item" href="donate.html">Donation </a></li>
-                           
-                        </ul>
-                    </li>
-                    
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                </ul>
-            </div>
+    <div class="container d-flex justify-content-between">
+        <!-- Logo à gauche -->
+        <a class="navbar-brand" href="index.html">
+            <img src="assets/images/assetp.png" alt="Logo FHEDU" class="logo-navbar">
+        </a>
+
+        <!-- Bouton de menu pour les petits écrans -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu de navigation centré avec les éléments espacés -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">À Propos</a></li>
+                <li class="nav-item"><a class="nav-link" href="causes.html">Nos Causes</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Galerie</a></li>
+                
+                <!-- Dropdown for Blog -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="blog.html" id="blogDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Blogueur
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="blogDropdown">
+                        <li><a class="dropdown-item" href="blog.html">Blogueur</a></li>
+                        <li><a class="dropdown-item" href="evenement.html">Nos Événement </a></li>
+                        <li><a class="dropdown-item" href="donate.html">Donation </a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
         </div>
-    </nav>
+
+        <!-- Bouton Donation apresa Contact -->
+        <a href="donate.html" class="btn btn-donate bounceInUp ms-3">Donation</a>
+    </div>
+</nav>
+
     
     
     <!-- CSS -->
@@ -164,28 +165,23 @@
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img src="assets/images/slider/banner1.JPG" class="d-block w-100" alt="...">
-                  <div class="carousel-caption d-none pb-5 mb-5 d-md-block">
-                    <div class="row text-center mt-3 vbh">
-                        <a href="donate.html" class="btn mx-auto w-auto px-5 py-3 btn-primary fs-5 bounceInUp btn-donate">Donation</a>
-                    </div>
-                 </div>
+                 <div class="carousel-caption d-flex justify-content-center align-items-center">
+                    <a href="donate.html" class="btn btn-donate bounceInUp">Donation</a>
+                </div>
+
                 </div>
                 
                 <div class="carousel-item">
                     <img src="assets/images/slider/banner2.JPG" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none pb-5 mb-5 d-md-block">
-                        <div class="row text-center mt-3 vbh">
-                            <a href="donate.html" class="btn mx-auto w-auto px-5 py-3 btn-primary fs-5 bounceInUp">Donation</a>
-                        </div>
-                    </div>
+                    <div class="carousel-caption d-flex justify-content-center align-items-center">
+                    <a href="donate.html" class="btn btn-donate bounceInUp">Donation</a>
+                </div>
                 </div>
                 <div class="carousel-item">
                     <img src="assets/images/slider/banner1.JPG" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none pb-5 mb-5 d-md-block">
-                        <div class="row text-center mt-3 vbh">
-                            <a href="donate.html" class="btn mx-auto w-auto px-5 py-3 btn-primary fs-5 bounceInUp">Donation</a>
-                        </div>
-                    </div>
+                    <div class="carousel-caption d-flex justify-content-center align-items-center">
+                    <a href="donate.html" class="btn btn-donate bounceInUp">Donation</a>
+                </div>
                 </div>
                 
                

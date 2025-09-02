@@ -134,6 +134,31 @@ img {
 }
 
 
+/* Style bouton Donation nan carousel */
+.carousel-caption .btn-donate {
+    background-color: rgba(2, 128, 50, 0.8); /* semi-transparent */
+    color: #ffffff;
+    font-weight: 500;
+    border-radius: 8px;
+    padding: 25px 35px;      /* bouton pi gwo sou desktop */
+    font-size: 18px;          /* tèks pi gwo sou desktop */
+    transition: all 0.3s ease;
+}
+
+/* Bouton piti sou ti ekran (mobil) */
+@media (max-width: 768px) {
+    .carousel-caption .btn-donate {
+        font-size: 12px;      /* tèks pi piti sou mobil */
+        padding: 7px 14px;    /* bouton pi piti sou mobil */
+    }
+}
+
+/* Efè hover */
+.carousel-caption .btn-donate:hover {
+    background-color: rgba(255, 193, 7, 1); /* pi solid lè hover */
+    color: #000;
+}
+
 
 
 
